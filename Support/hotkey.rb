@@ -64,7 +64,7 @@ module HotKey
   def HotKey.main()
     options = get_options()
     
-    if(!File.exists?(options["config"]))
+    if(!File.exist?(options["config"]))
       @config = Hash.new()
     else
       @config = get_config(options["config"])
